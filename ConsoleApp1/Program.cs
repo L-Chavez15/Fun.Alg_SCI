@@ -14,53 +14,61 @@ namespace ConsoleApp1
         }
         static void Pisos()
         {
-            int num;
-            do
+            while (true)
             {
-                Console.WriteLine(" ------------------------------------");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|               PISO 3               |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine(" ------------------------------------");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|               PISO 2               |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine(" ------------------------------------");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|               PISO 1               |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine("|                                    |");
-                Console.WriteLine(" ------------------------------------");
-                Console.Write("Que piso desea analizar: ");
-                num = int.Parse(Console.ReadLine());
                 Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                //Console.WriteLine("\t=================================");
+                Console.WriteLine("\t*****SISTEMA CONTRA INCENDIOS*****    ");
+                //Console.WriteLine("\t=================================\n");
+                Console.ResetColor();
+                Console.WriteLine(" ---------------------------------------");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\tPISO 3\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine(" ---------------------------------------");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\tPISO 2\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine(" ---------------------------------------");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\tPISO 1\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine("|\t\t\t\t\t|");
+                Console.WriteLine(" ---------------------------------------\n");
 
-                if (num == 1)
+                string opcion;
+                Console.WriteLine("INGRESE EL PISO A INSPECCIONAR:  ");
+                opcion = Console.ReadLine();
+
+
+                if (opcion == "1")
                 {
                     Piso1();
+
                 }
-                else if (num == 2)
+                else if (opcion == "2")
                 {
                     Piso2();
                 }
-                else if (num == 3)
+                else if (opcion == "3")
                 {
                     Piso3();
                 }
@@ -69,73 +77,60 @@ namespace ConsoleApp1
                     Console.WriteLine("INGRESE UN VALOR VALIDO");
                 }
 
+                Console.ReadKey();
 
             }
-            while (true);
-            Console.ReadKey();
+
+            
         }
         static void Piso1()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("=========================================");
+            Console.WriteLine("\t\tPISO 1");
+            Console.WriteLine("=========================================\n");
+            Console.ResetColor();
             float tem;
             Random R = new Random();
-            tem = R.Next(25, 150);
-            Console.WriteLine("\t \t \t \t \t \t ***** PISO 1 *****\t \t \t \t\n");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                AGUA                |                                    |");
-            Console.WriteLine("|            TEMPERATURA             |              SENSORES              |                                    |                                    |");
-            Console.WriteLine("|            DEL SECTOR              |              DE  HUMO              |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                 5%                 |                OFF                 |                OFF                 |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
+            tem = R.Next(20, 150);
+            float humo;
+            Random R1 = new Random();
+            humo = R1.Next(0, 51);
+            Console.WriteLine("HOLA Piso 1");
         }
         static void Piso2()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("=========================================");
+            Console.WriteLine("\t\tPISO 2");
+            Console.WriteLine("=========================================\n");
+            Console.ResetColor();
             float tem;
             Random R = new Random();
-            tem = R.Next(25, 150);
-            Console.WriteLine("\t \t \t \t \t \t ***** PISO 2 *****\t \t \t \t\n");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                AGUA                |                                    |");
-            Console.WriteLine("|            TEMPERATURA             |              SENSORES              |                                    |                                    |");
-            Console.WriteLine("|            DEL SECTOR              |              DE  HUMO              |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                 5%                 |                OFF                 |                OFF                 |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
+            tem = R.Next(20, 150);
+            float humo;
+            Random R1 = new Random();
+            humo = R1.Next(0, 51);
+            Console.WriteLine("HOLA Piso 2");
         }
         static void Piso3()
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("=========================================");
+            Console.WriteLine("\t\tPISO 3");
+            Console.WriteLine("=========================================\n");
+            Console.ResetColor();
             float tem;
             Random R = new Random();
-            tem = R.Next(25, 150);
-            Console.WriteLine("\t \t \t \t \t \t ***** PISO 3 *****\t \t \t \t\n");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                AGUA                |                                    |");
-            Console.WriteLine("|            TEMPERATURA             |              SENSORES              |                                    |                                    |");
-            Console.WriteLine("|            DEL SECTOR              |              DE  HUMO              |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                 5%                 |                OFF                 |                OFF                 |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine("|                                    |                                    |                                    |                                    |");
-            Console.WriteLine(" ---------------------------------------------------------------------------------------------------------------------------------------------------");
+            tem = R.Next(20, 150);
+            float humo;
+            Random R1 = new Random();
+            humo = R1.Next(0, 51);
+            Console.WriteLine("HOLA Piso 3");
         }
+
     }
 }
