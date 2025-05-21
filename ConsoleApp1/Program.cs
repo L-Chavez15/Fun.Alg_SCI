@@ -10,7 +10,51 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HOLA MUNDO");
+            
+        }
+        static void Pisos()
+        {
+            int num;
+            do
+            {
+                Console.WriteLine(" ------------------------------------");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|               PISO 3               |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine(" ------------------------------------");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|               PISO 2               |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine(" ------------------------------------");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|               PISO 1               |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine("|                                    |");
+                Console.WriteLine(" ------------------------------------");
+                Console.Write("Que piso desea analizar: ");
+                num = int.Parse(Console.ReadLine());
+                Console.Clear();
+                
+            }
+            while (true);
+            Console.ReadKey();
         }
     }
 }
